@@ -1,0 +1,8 @@
+
+parameters:
+   zee_capifony_deploy_info.class: ZeeCoder\Bundle\CapifonyDeployInfoBundle\Service
+
+services:
+   zee_capifony_deploy_info.deployment:
+       class: %zee_capifony_deploy_info.class%\DeploymentService
+       arguments: [%kernel.root_dir%]
