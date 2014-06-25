@@ -16,5 +16,5 @@
     "autoload": {
         "psr-0": { "ZeeCoder\\Bundle\\CapifonyDeployInfoBundle\\": "" }
     },
-    "target-dir": "ZeeCoder/Bundle/CapifonyDeployInfoBundle",
+    "target-dir": "ZeeCoder/Bundle/CapifonyDeployInfoBundle"
 }
