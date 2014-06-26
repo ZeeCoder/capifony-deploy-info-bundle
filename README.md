@@ -8,7 +8,8 @@ The bundle adds a simple footer for the dev environment, showing when was the la
 Usage
 -----
  - Install with composer,
- - Register in the AppKernel with `new ZeeCoder\Bundle\CapifonyDeployInfoBundle\ZeeCapifonyDeployInfoBundle(),`,
+ - Register in the AppKernel: `new ZeeCoder\Bundle\CapifonyDeployInfoBundle\ZeeCapifonyDeployInfoBundle(),`,
+ - Add the css after `assets:install`: `bundles/zeecapifonydeployinfo/css/DeploymentInfo.css`
  - Render the Deployment controller's getInfo action wherever you want in your twig template:
   
    `{{ render(controller('ZeeCapifonyDeployInfoBundle:Deployment:getInfo')) }}`
