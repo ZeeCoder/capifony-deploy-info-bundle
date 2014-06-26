@@ -3,7 +3,7 @@ Capifony Deplyoment Info Bundle
 
 As the name suggests, this bundle assumes a Capifony deployment process.
 
-The bundle adds a simple footer for the dev environment, showing when was the last deployment, and what is the current "version". (Which is the name of the root folder on the server.)
+The bundle adds a simple footer for the dev environment, showing when was the last deployment, and what is the current "version". (Which is the name of the project's current folder on the server.)
 
 Usage
 -----
