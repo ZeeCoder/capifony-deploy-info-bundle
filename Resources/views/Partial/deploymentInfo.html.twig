@@ -1,5 +1,7 @@
 
-<div class="DeploymentInfo">
-    <b>Latest deployment:</b> {{deploymentInfo.date.format('Y-m-d H:i')}}.
-    <b>Version:</b> {{deploymentInfo.version}}.
-</div>
+{% if app.environment == 'dev' %}
+    <div class="DeploymentInfo">
+        <b>Latest deployment:</b> {{deploymentInfo.date.format('Y-m-d H:i')}}.
+        <b>Version:</b> {{deploymentInfo.version}}.
+    </div>
+{% endif %}
