@@ -8,15 +8,15 @@ class DeploymentService
     private $environment;
     private $dev_version;
     private $real_version;
-    private $local_version;
+    private $local_prod_version;
 
-    public function __construct($app_path, $environment, $dev_version, $real_version, $local_version)
+    public function __construct($app_path, $environment, $dev_version, $real_version, $local_prod_version)
     {
         $this->app_path = $app_path;
         $this->environment = $environment;
         $this->dev_version = $dev_version;
         $this->real_version = $real_version;
-        $this->local_version = $local_version;
+        $this->local_prod_version = $local_prod_version;
     }
 
     public function getInfo()
@@ -29,7 +29,7 @@ class DeploymentService
             if (!$version = $this->real_version) {
                 $version = basename($app_path);
                 if (!is_numeric($version)) {
-                    $version = $this->local_version;
+                    $version = $this->local_prod_version;
                 } 
             }
         }

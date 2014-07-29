@@ -1,0 +1,6 @@
+
+parameters:
+    zee_capifony_deploy_info.dev_version: dev
+    zee_capifony_deploy_info.local_prod_version: prod
+    zee_capifony_deploy_info.real_version: ~
+    zee_capifony_deploy_info.allowed_hosts: localhost|127.0.0.1

@@ -10,4 +10,4 @@ services:
             - %kernel.environment%
             - %zee_capifony_deploy_info.dev_version%
             - %zee_capifony_deploy_info.real_version%
-            - %zee_capifony_deploy_info.local_version%
+            - %zee_capifony_deploy_info.local_prod_version%
