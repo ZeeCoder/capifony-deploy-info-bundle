@@ -14,9 +14,11 @@ class DeploymentController extends Controller
     public function getInfoAction()
     {
         $deploymentService = $this->get('zee_capifony_deploy_info.deployment');
+        $allowedHosts = $this->container->getParameter('zee_capifony_deploy_info.allowed_hosts');
 
         return array(
             'deploymentInfo' => $deploymentService->getInfo(),
+            'allowedHosts' => $allowedHosts,
         );
     }
 }

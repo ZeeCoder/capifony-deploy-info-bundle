@@ -1,4 +1,7 @@
-{% if app.environment == 'dev' %}
+{% if
+    app.environment == 'dev' or
+    app.request.host in allowedHosts
+%}
     <div class="DeploymentInfo">
         <b>Latest deployment:</b> {{deploymentInfo.date.format('Y-m-d H:i')}}.
         <b>Version:</b> {{deploymentInfo.version}}.

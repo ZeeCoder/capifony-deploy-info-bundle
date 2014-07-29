@@ -3,6 +3,11 @@ parameters:
    zee_capifony_deploy_info.class: ZeeCoder\Bundle\CapifonyDeployInfoBundle\Service
 
 services:
-   zee_capifony_deploy_info.deployment:
-       class: %zee_capifony_deploy_info.class%\DeploymentService
-       arguments: [%kernel.root_dir%]
+    zee_capifony_deploy_info.deployment:
+        class: %zee_capifony_deploy_info.class%\DeploymentService
+        arguments:
+            - %kernel.root_dir%
+            - %kernel.environment%
+            - %zee_capifony_deploy_info.dev_version%
+            - %zee_capifony_deploy_info.real_version%
+            - %zee_capifony_deploy_info.local_version%
