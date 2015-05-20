@@ -1,5 +1,6 @@
 Capifony Deplyoment Info Bundle
 ===============================
+[![Project Status](http://stillmaintained.com/ZeeCoder/capifony-deploy-info-bundle.png)](http://stillmaintained.com/ZeeCoder/capifony-deploy-info-bundle)
 
 As the name suggests, this bundle assumes a Capifony deployment process.
 
